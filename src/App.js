@@ -73,52 +73,30 @@ function App() {
 	  	</div>
 	  	<div className="content">
 	  		<div className="section"/>
-	  		<h4 className="expertise center-align blue-grey-text text-lighten-1"><i className="material-icons">check_circle</i>&nbsp;Expertise</h4>
-	  		<div className="section"/>
+	  		<h4 className="center-align blue-grey-text text-lighten-1"><i className="material-icons">check_circle</i>&nbsp;Expertise</h4>
 
 	  		{
 	  		//EXPERTISE START
 	  		} 
 
-	  		<div className="row valign-wrapper">
-	  			<div className="col s12 l5 expertise-first-left center-align">
-	  				<img className="" alt="image" src={require('./icons/code.svg').default}/>
-	  			</div>
-	  			
-		  		<div className="col s12 l7 expertise-first-right">
+	  		<div className="row row-expertise valign-wrapper">		
+		  		<div className="col s12 l6 expertise right-align">
 		  			<h5 className="valign-wrapper"><i className="material-icons">code</i>&nbsp;Web Developer</h5>
 		  			<p className="text2">My first expertise is to be <b className="blue-grey-text text-lighten-1">Front End Web Developer</b>. I've build website with Vanilla Js, Jquery, Php, Bootstrap, Materialize css, Codeigniter, and React js.</p>
 		  		</div>
-	  		</div>
-
-	  		<div className="section"/>
-	  		<div className="section hide-on-small-only"/>
-
-	  		<div className="row valign-wrapper">
-	  			<div className="col s12 l5 push-l7 expertise-first-left center-align">
-	  				<img className="" alt="image" src={require('./quote.jpg').default}/>
-	  			</div>
-	  			
-		  		<div className="col s12 l7 pull-l5 expertise-first-right">
+		  		<div className="col s12 l6 expertise">
 		  			<h5 className="valign-wrapper"><i className="material-icons">edit</i>&nbsp;Content Writer</h5>
 		  			<p className="text2">I also a newbie <b className="blue-grey-text text-lighten-1">Content Writer</b>. Sometimes i write an ariticle in my blog fanyusuf.com and in my bad time i chose to write poems.</p>
 		  		</div>
 	  		</div>
-
-	  		<div className="section"/>
-	  		<div className="section hide-on-small-only"/>
-
-	  		<div className="row valign-wrapper">
-	  			<div className="col s12 l5 expertise-first-left center-align">
-	  			
-	  				<img className="" alt="image" src={require('./icons/play-outline.svg').default}/>
-	  			
-
-	  			</div>
-	  			
-		  		<div className="col s12 l7 expertise-first-right">
+	  		<div className="row valign-wrapper">		
+		  		<div className="col s12 l6 expertise right-align">
 		  			<h5 className="valign-wrapper"><i className="material-icons">play_circle_outline</i>&nbsp;Content Creator</h5>
 		  			<p className="text2">Sometimes I make video tutorials, <b className="blue-grey-text text-lighten-1">especially basic blogger tutorials</b>. I'm not good at this, I just love sharing.</p>
+		  		</div>
+		  		<div className="col s12 l6 expertise">
+		  			<h5 className="valign-wrapper"><i className="material-icons">edit</i>&nbsp;Content Writer</h5>
+		  			<p className="text2">I also a newbie <b className="blue-grey-text text-lighten-1">Content Writer</b>. Sometimes i write an ariticle in my blog fanyusuf.com and in my bad time i chose to write poems.</p>
 		  		</div>
 	  		</div>
 
@@ -126,7 +104,6 @@ function App() {
 	  		//EXPERTISE END
 	  		} 
 
-	  		<div className="section"/>
 	  		<h4 className="Portfolio center-align blue-grey-text text-lighten-1"><i className="material-icons">laptop_mac</i>&nbsp;Portfolio</h4>
 	  		<div className="section"/>
 

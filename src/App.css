@@ -32,22 +32,9 @@ nav::after{
 	left: -30vh;
 }
 
-/*nav::before{
-	width: 35vh;
-	height: 35vh;
-	background: #78909c;
-	top: -15vh;
-	left: 35vh;
+.row-expertise{
+	margin-bottom: 0!important;
 }
-
-.container::before{
-	width: 50vh;
-	height: 50vh;
-	background: #b0bec5 ;
-	top: 15vh;
-	left: -30vh;
-}*/
-
 .profile1{
 	line-height: 1.1;
 }
@@ -58,36 +45,14 @@ nav::after{
 nav ul li a.twitter img, nav ul li a.ig img, nav ul li a.github img, nav ul li a.yt img{
 	width: 48px;
 }
-.expertise-icons{
-	width: 32px;
+.expertise{
+	padding: 0.5rem 1.25rem!important;
 }
-.expertise-first-right{
-	margin: 0 30px!important;
+.expertise h5{
+
 }
-.expertise-first-left img{
-	width: 80%;
-	border-top-right-radius: 50%;
-	border: 4px dashed #b0bec5;
-	border-bottom-left-radius: 50%;
-	border-bottom-right-radius: 50%;
-	overflow: hidden;
-}
-.expertise-first-left.push-l7 img{
-	border-top-left-radius: 50%;
-	border-top-right-radius: 0!important;
-}
-.l5{
-	border-right: 1px dashed #b0bec5;
-}
-.l5.profile{
-	border-right: none;
-}
-.l5.push-l7{
-	border-left: 1px dashed #b0bec5;
-	border-right: none;
-}
-.l7{
-	position: relative;
+.right-align h5{
+	justify-content: flex-end;
 }
 .avatar{
 	position: absolute;
@@ -196,4 +161,16 @@ nav ul li a.twitter img, nav ul li a.ig img, nav ul li a.github img, nav ul li a
 		margin: 0!important;
 	}
 
+	.expertise{
+		border-radius: 2%;
+	}
+	.expertise{
+		
+		border-left: 1px solid #b0bec5;
+		
+	}
+	.expertise.right-align{
+		border-left: 0;
+		border-right: 1px solid #b0bec5;
+}
 }
