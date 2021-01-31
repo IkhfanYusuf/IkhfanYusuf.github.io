@@ -54,10 +54,13 @@ nav ul li a.twitter img, nav ul li a.ig img, nav ul li a.github img, nav ul li a
 .right-align h5{
 	justify-content: flex-end;
 }
+.col-avatar{
+	position: relative;
+}
 .avatar{
 	position: absolute;
-	width: 50vh;
-	height: 50vh;
+	width: 56vh;
+	height: 56vh;
 	border: 4px dashed #b0bec5;
 	border-top-left-radius: 50%;
 	border-bottom-left-radius: 50%;
@@ -76,33 +79,7 @@ nav ul li a.twitter img, nav ul li a.ig img, nav ul li a.github img, nav ul li a
 	border-radius: 90%;
 }
 
-/* label color */
-   .input-field label {
-     color: #fff!important;
-   }
-   /* label focus color */
-   .input-field input:focus + label {
-     color: #fff!important;
-   }
-   /* label underline focus color */
-   .input-field input:focus, .input-field textarea:focus{
-     border-bottom: 1px solid #fff!important;
-     box-shadow: 0 1px 0 0 #fff!important;
-   }
-   /* valid color */
-   .input-field input.valid {
-     border-bottom: 1px solid #fff!important;
-     box-shadow: 0 1px 0 0 #fff!important;
-   }
-   /* invalid color */
-   .input-field input.invalid {
-     border-bottom: 1px solid #fff!important;
-     box-shadow: 0 1px 0 0 #fff!important;
-   }
-   /* icon prefix focus color */
-   .input-field .prefix.active {
-     color: #fff!important;
-   }
+
 
    .hideFace{
    		display: none;
@@ -114,6 +91,10 @@ nav ul li a.twitter img, nav ul li a.ig img, nav ul li a.github img, nav ul li a
 	.menu{
 		right: 0;
 		bottom: 0;
+	}
+
+	h6{
+		font-weight: bold!important;
 	}
 
 @media only screen and (max-width: 600px)
@@ -161,16 +142,28 @@ nav ul li a.twitter img, nav ul li a.ig img, nav ul li a.github img, nav ul li a
 		margin: 0!important;
 	}
 
-	.expertise{
-		border-radius: 2%;
+	.right-align{
+		text-align: left!important;
 	}
-	.expertise{
-		
-		border-left: 1px solid #b0bec5;
-		
+
+	
+	.row-expertise .expertise:nth-child(1){
+		border-left: 1pt dashed #cfd8dc;
+		border-bottom: 1pt dashed #cfd8dc;
 	}
-	.expertise.right-align{
-		border-left: 0;
-		border-right: 1px solid #b0bec5;
-}
+	.row-expertise .expertise:nth-child(2){
+		border-left: 1pt dashed #b0bec5;
+		border-bottom: 1pt dashed #b0bec5;
+	}
+	.row-expertise2 .expertise:nth-child(1){
+		border-left: 1pt dashed #90a4ae;
+		border-bottom: 1pt dashed #90a4ae;
+	}
+	
+	.row-expertise2 .expertise:nth-child(2){
+		border-left: 1pt dashed #78909c;
+		border-bottom: 1pt dashed #78909c;
+	}
+
+	
 }
