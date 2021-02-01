@@ -3,8 +3,20 @@ import React from "react";
 const Jumbotron = ()=>{
 
 	const hideFace = () =>{
-		document.querySelector('.avatar').classList.toggle('hideFace');
+		
 	}
+
+	const hideShow = () => {
+
+	   	let hideShow = document.getElementById('hideShow').checked;
+	   	
+	   	if(hideShow !== true){
+	   		document.querySelector('.avatar').classList.add('hideFace');
+	   	}else{
+	   		document.querySelector('.avatar').classList.remove('hideFace');
+	   	}
+	}
+
 
   return (
     <div className="jumbotron">
@@ -22,8 +34,15 @@ const Jumbotron = ()=>{
 	  			<p className="text1">I'm <b className="blue-grey-text text-lighten-1">Ikhfan Yusuf Arifin</b>, 21 years old. Now, I'm a Pamulang University student.</p>
 	  			<div className="row button-hide-face">
 	  				<div className="col s12">
-	  					<a onClick={hideFace} className="waves-effect waves-light btn-small tooltipped" data-position="bottom" data-tooltip="Hit the button to hide my face."><i className="material-icons left">not_interested</i><b>Hide</b></a>
-	  					<p style={{display: "inline-block"}}>&nbsp;Hit the button to hide my face.</p>
+	  					<div className="switch">
+						    <label>
+						      Hide
+						      <input onClick={hideShow} id="hideShow" type="checkbox" defaultChecked/>
+						      <span className="lever"></span>
+						      Show
+						    </label>
+						  </div>
+	  					<p style={{display: "inline-block"}}>Switch the button above if you want to hide my face.</p>
 	  				</div>
 	  				
 	  			</div>

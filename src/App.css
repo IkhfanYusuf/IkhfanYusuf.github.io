@@ -11,21 +11,23 @@ body{
 .sidenav-trigger{
 	margin-left: 5px!important;
 }
-nav::after, nav::before, .container::before{
+.navDark::after, .navDark::before, .nav::after, .nav::before{
 	content: '';
 	position: absolute;
-	z-index: -999;
-	opacity: .85;
+	z-index: -1;
 	border-radius: 50%;
 }
-nav::before{
+.nav::after, .nav::before{
+	opacity: .85;
+}
+.nav::before, .navDark::before{
 	width: 99vh;
 	height: 99vh;
 	background: #eceff1;
 	top: -75vh;
 	left: -30vh;
 }
-nav::after{
+.nav::after, .navDark::after{
 	width: 100vh;
 	height: 100vh;
 	border: 4px dashed #eceff1;
@@ -33,6 +35,17 @@ nav::after{
 	left: -30vh;
 }
 
+.navDark::after, .navDark::before{
+	opacity: .4;
+}
+
+
+
+.darkMode{
+	background: #121212;
+	color: #fafafa;
+	/*opacity: 0.5;*/
+}
 .row-expertise{
 	margin-bottom: 0!important;
 }
@@ -70,10 +83,11 @@ nav::after{
 	align-items: flex-end;
 	justify-content: center;
 	overflow: hidden;
+	opacity: .95;
 }
 .avatar img{
 	width: 100%;
-	z-index: -9;
+	/*z-index: -9;*/
 	border-radius: 90%;
 }
 
@@ -104,10 +118,10 @@ nav::after{
 		justify-content: center;
 		overflow: hidden;
 		margin: 0 auto;
+
 	}
 	.avatar img{
 		width: 100%;
-		z-index: -9;
 		border-radius: 90%;
 	}
 	nav::before{
