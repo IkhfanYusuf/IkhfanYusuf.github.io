@@ -1,12 +1,9 @@
 import React from "react";
-import 'materialize-css/dist/css/materialize.min.css';
-import M from 'materialize-css';
 
 const Jumbotron = ()=>{
 
 	const hideFace = () =>{
 		document.querySelector('.avatar').classList.toggle('hideFace');
-		console.log("click");
 	}
 
   return (

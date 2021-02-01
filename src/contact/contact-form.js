@@ -27,12 +27,6 @@ function Contact() {
   return (
     <div>
 
-    <div className="fixed-action-btn">
-    	<button onClick={open} data-target="modal1" className="waves-effect waves-light btn btn-floating modal-trigger"><i className="material-icons">message</i></button>
-    	
-    </div>
-
-  
 	  <div id="modal1" className="modal">
 	      <form method="post" className="col s12">
 	    <div className="modal-content">
