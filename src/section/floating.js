@@ -1,6 +1,7 @@
 import React from "react";
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Float = ()=>{
 
@@ -16,16 +17,15 @@ const Float = ()=>{
 
   return (
   	<div className="fixed-action-btn">
-	  <a className="btn btn-floating red">
-	    <i className="large material-icons">mode_edit</i>
+	  <a className="btn-floating btn-large red">
+	    <i className="large material-icons">message</i>
 	  </a>
 	  <ul>
-	    <li><button onClick={open} data-target="modal1" className="btn-floating green modal-trigger"><i className="material-icons">message</i></button></li>
-	    <li><a className="btn-floating yellow darken-1"><i className="material-icons">format_quote</i></a></li>
-	    <li><a href="https://instagram.com/ikhfan_yusuf" className="social btn-floating yellow darken-1"><i className="fa fa-google"></i></a></li>
-    	<li><a href="https://twitter.com/myname_iye" className="btn-floating"><img alt="socmed-icons" src={require('../icons/twitter.svg').default}/></a></li>
-    	<li><a href="https://youtube.com/ikhfanyusuf" className="btn-floating"><img alt="socmed-icons" src={require('../icons/play-2935460.svg').default}/></a></li>
-    	<li><a href="https://github.com/ikhfanyusuf" className="btn-floating"><img alt="socmed-icons" src={require('../icons/github.svg').default}/></a></li>
+	    <li><button onClick={open} data-target="modal1" className="btn-floating green modal-trigger"><i className="fab fa-whatsapp"></i></button></li>
+	    <li><a href="https://instagram.com/ikhfan_yusuf" className="social btn-floating yellow darken-2"><i className="fab fa-instagram"></i></a></li>
+    	<li><a href="https://twitter.com/myname_iye" className="btn-floating light-blue lighten-2"><i className="fab fa-twitter"></i></a></li>
+    	<li><a href="https://youtube.com/ikhfanyusuf" className="btn-floating red"><i className="fab fa-youtube"></i></a></li>
+    	<li><a href="https://github.com/ikhfanyusuf" className="btn-floating black"><i className="fab fa-github"></i></a></li>
 	  </ul>
 	</div>
   );
