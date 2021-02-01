@@ -43,9 +43,6 @@ nav::after{
 	letter-spacing: 0.075pt;
 	word-spacing: 1.5pt;
 }
-nav ul li a.twitter img, nav ul li a.ig img, nav ul li a.github img, nav ul li a.yt img{
-	width: 48px;
-}
 .expertise{
 	padding: 0.5rem 1.25rem!important;
 }
