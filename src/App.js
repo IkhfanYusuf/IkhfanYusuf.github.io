@@ -31,6 +31,7 @@ function App(){
 	// } 
 
 	//<a  href="#modal1" onClick={open} className="waves-effect waves-light btn btn-floating" ><i className="material-icons">message</i></a>
+	
 
   return (
     <div>
@@ -40,6 +41,9 @@ function App(){
 		<Contact />
   
     	<div className="container">
+
+    		
+
 		    {/*NAV START*/ } 
 
 			<Nav />
@@ -66,10 +70,21 @@ function App(){
 		  		<div className="section"/>
 
 		  	</div>
+
+		  	{/*FOOTER START*/} 
+
+				<div className="hide-on-med-and-down">
+					<Footer />
+				</div>
+
+			{/*FOOTER END*/}
+
 		</div>
 		{/*FOOTER START*/} 
 
-		<Footer />
+		<div className="hide-on-large-only">
+			<Footer />
+		</div>
 
 		{/*FOOTER END*/}
 

@@ -4,25 +4,46 @@ import M from 'materialize-css';
 
 const Nav = ()=>{
 
+	let dark;
 	document.addEventListener('DOMContentLoaded', () => {
+		dark = sessionStorage.getItem('dark');
 	    const sidenav = document.querySelectorAll('.sidenav');
 	    M.Sidenav.init(sidenav);
-	    
+	    if(dark !==null){
+	    	document.getElementById('darkMode').checked=true;
+	    	darkMode();
+	    }
 	 });
 
 	const darkMode = () => {
-		const dark = document.getElementById('darkMode').checked;
-		if(dark === true){
-			document.querySelector('body').classList.add('darkMode');
-			document.querySelector('.avatar').style.background="#fafafa";
-			document.querySelector('nav').classList.remove('nav');
-			document.querySelector('nav').classList.add('navDark');
-			
-		}else{
-			document.querySelector('body').classList.remove('darkMode');
-			document.querySelector('.avatar').style.background="none";
-			document.querySelector('nav').classList.remove('navDark');
-			document.querySelector('nav').classList.add('nav');
+		const darkMode = document.getElementById('darkMode').checked;
+		const nav = document.querySelector('nav').classList;
+		const avatar = document.querySelector('.avatar').style;
+		const body = document.querySelector('body').classList;
+		const card = document.querySelectorAll('.card');
+
+		let i = 0;
+		while(i<card.length){
+			document.getElementsByClassName('card')[i].classList.toggle('teal');
+			document.getElementsByClassName('link-portfolio')[i].classList.toggle('teal-text');
+			document.getElementsByClassName('link-portfolio')[i].classList.toggle('text-teal');
+			document.getElementsByClassName('bold-expertise')[i].classList.toggle('blue-grey-text');
+			i++;
+		}
+
+		
+		if(darkMode === true){
+			body.add('darkMode');
+			avatar.background="#009688";
+			nav.remove('nav');
+			nav.add('navDark');
+			sessionStorage.setItem('dark', 'on');
+		}else if(darkMode === false){
+			body.remove('darkMode');
+			avatar.background="none";
+			nav.remove('navDark');
+			nav.add('nav');
+			sessionStorage.removeItem('dark');
 		}
 	}
 
@@ -50,10 +71,7 @@ const Nav = ()=>{
 		  </div>
 		</nav>
 		<ul className="sidenav" id="mobile-demo">
-		    <li><a href="sass.html">Sass</a></li>
-		    <li><a href="badges.html">Components</a></li>
-		    <li><a href="collapsible.html">Javascript</a></li>
-		    <li><a href="mobile.html">Mobile</a></li>
+		    <li>Still blank.</li>
 		    
 		</ul>
 	</div>

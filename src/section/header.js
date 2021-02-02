@@ -42,7 +42,7 @@ const Jumbotron = ()=>{
 						      Show
 						    </label>
 						  </div>
-	  					<p style={{display: "inline-block"}}>Switch the button above if you want to hide my face.</p>
+	  					<p style={{display: "inline-block"}}>Switch the button if you want to hide my face.</p>
 	  				</div>
 	  				
 	  			</div>

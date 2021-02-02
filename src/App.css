@@ -39,7 +39,9 @@ body{
 	opacity: .4;
 }
 
-
+p.text2{
+	font-size: 15px;
+}
 
 .darkMode{
 	background: #121212;
@@ -83,7 +85,7 @@ body{
 	align-items: flex-end;
 	justify-content: center;
 	overflow: hidden;
-	opacity: .95;
+	
 }
 .avatar img{
 	width: 100%;
@@ -105,9 +107,13 @@ body{
 		bottom: 0;
 	}
 
-	h6{
-		font-weight: bold!important;
+	.page-footer{
+		opacity: 0.75;
 	}
+	/*.card{
+		box-shadow : 0 2px 2px 0 rgba(255,255,255,0.14), 0 3px 1px -2px rgba(255,255,255,0.12), 0 1px 5px 0 rgba(255,255,255,0.2)!important;
+	}
+*/
 
 @media only screen and (max-width: 600px)
 {
@@ -124,14 +130,14 @@ body{
 		width: 100%;
 		border-radius: 90%;
 	}
-	nav::before{
+	.nav::before, .navDark::before{
 		width: 80vh;
 		height: 80vh;
 		background: #eceff1;
 		top: -65vh;
 		left: -35vh;
 	}
-	nav::after{
+	.nav::after, .navDark::after{
 		width: 81vh;
 		height: 81vh;
 		border: 4px dashed #eceff1;
@@ -159,7 +165,7 @@ body{
 	}
 
 	
-	.row-expertise .expertise:nth-child(1){
+	/*.row-expertise .expertise:nth-child(1){
 		border-left: 1pt dashed #cfd8dc;
 		border-bottom: 1pt dashed #cfd8dc;
 	}
@@ -175,7 +181,7 @@ body{
 	.row-expertise2 .expertise:nth-child(2){
 		border-left: 1pt dashed #78909c;
 		border-bottom: 1pt dashed #78909c;
-	}
+	}*/
 
 	
 }
