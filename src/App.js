@@ -66,7 +66,7 @@ function App(){
 
 		  		{/*EXPERTISE END*/} 
 
-		  		<h4 className="Portfolio center-align blue-grey-text text-lighten-1"><i className="fas fa-laptop-code"></i>&nbsp;&nbsp;Portfolio</h4>
+		  		{/*<h4 className="Portfolio center-align blue-grey-text text-lighten-1"><i className="fas fa-laptop-code"></i>&nbsp;&nbsp;Portfolio</h4>*/}
 		  		<div className="section"/>
 
 		  	</div>
